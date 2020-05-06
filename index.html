@@ -143,11 +143,40 @@
         margin-right: 1rem;
       }
 
+      .subscribe {
+        margin: 4rem 2rem;
+        text-align: center;
+      }
+      .subscribe input {
+        border: none;
+      }
+      .subscribe button {
+        background-color: #c6302c;
+        border: none;
+        color: white;
+      }
+      .subscribe button:hover {
+        background-color: #c6302c;
+        cursor: pointer;
+        outline: none;
+        opacity: 0.7;
+      }
+      .subscribe button:focus {
+        background-color: #c6302c;
+        cursor: pointer;
+        outline: none;
+        opacity: 0.7;
+      }
+      .subscribe a {
+        text-decoration: underline;
+      }
+
       .authors > div {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
+        flex-wrap: wrap;
         max-width: 100%;
       }
       .author {
@@ -208,7 +237,7 @@
         <a href="" target="_blank" rel="noopener noreferrer">
           <svg><use href="#twitter" /></svg>
         </a>
-        <a href="" target="_blank" rel="noopener noreferrer">
+        <a href="https://medium.com/balalaika-it" target="_blank" rel="noopener noreferrer">
           <svg><use href="#medium" /></svg>
         </a>
         <a href="mailto:andrey@goncharov.page">
@@ -235,7 +264,23 @@
           <li>From developers to developers</li>
         </ul>
       </section>
-      <section class="subscribe"></section>
+      <section class="subscribe">
+        <form
+          action="https://balalaikait.us8.list-manage.com/subscribe/post?u=cacc4186f778dc0562cc7965c&amp;id=163bae017b"
+          method="post"
+          name="mc-embedded-subscribe-form"
+          target="_blank"
+        >
+          <input type="email" value="" name="EMAIL" placeholder="Your email address" required />
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_cacc4186f778dc0562cc7965c_163bae017b" tabindex="-1" value="" />
+          </div>
+          <button type="submit">Join the party</button>
+        </form>
+        <p>or</p>
+        <p>subscribe to our <a href="https://t.me/balalaikait" target="_blank" rel="noopener noreferrer">Telegram</a></p>
+      </section>
       <section class="authors">
         <h1>Authors</h1>
         <div>
