@@ -117,6 +117,13 @@
         text-align: center;
         margin: 2rem;
       }
+      @media (max-width: 767px) {
+        h1,
+        h2 {
+          margin-left: 1rem;
+          margin-right: 1rem;
+        }
+      }
 
       header {
         display: flex;
@@ -135,6 +142,11 @@
       }
       header nav {
         margin: 0 2rem;
+      }
+      @media (max-width: 767px) {
+        header nav {
+          margin: 0;
+        }
       }
       header nav svg {
         height: 2rem;
@@ -201,16 +213,45 @@
       }
 
       .subscribe {
-        margin: 4rem 2rem;
+        margin: 3rem 2rem;
         text-align: center;
+      }
+      @media (max-width: 767px) {
+        .subscribe {
+          margin-left: 1rem;
+          margin-right: 1rem;
+        }
+      }
+      .subscribe form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+      }
+      @media (max-width: 767px) {
+        .subscribe form {
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+        }
+        .subscribe button {
+          width: 15rem;
+        }
       }
       .subscribe input {
         border: none;
+        width: 15rem;
+        height: 1.5rem;
+        box-sizing: border-box;
+        max-width: 100%;
       }
       .subscribe button {
         background-color: #c6302c;
         border: none;
         color: white;
+        height: 1.5rem;
+        box-sizing: border-box;
+        max-width: 100%;
       }
       .subscribe button:hover {
         background-color: #c6302c;
