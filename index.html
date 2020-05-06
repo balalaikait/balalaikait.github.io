@@ -84,6 +84,14 @@
         align-items: flex-end;
         margin: 0 2rem;
       }
+      @media (max-width: 767px) {
+        header {
+          margin: 0 1rem;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+        }
+      }
       header nav {
         margin: 0 2rem;
       }
@@ -96,8 +104,9 @@
         margin: 0;
       }
       header img {
-        height: 12rem;
-        width: auto;
+        height: auto;
+        width: 270px;
+        max-width: 100%;
       }
       header p {
         margin: 0;
@@ -107,10 +116,17 @@
       main {
         padding: 2rem;
       }
+      @media (max-width: 767px) {
+        main {
+          padding: 1rem;
+        }
+      }
 
       .description ul {
         list-style: none;
         width: 22rem;
+        max-width: 100%;
+        box-sizing: border-box;
         margin: 0 auto;
       }
       .description li {
@@ -171,7 +187,7 @@
         text-decoration: underline;
       }
 
-      .authors > div {
+      .team > div {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -179,15 +195,23 @@
         flex-wrap: wrap;
         max-width: 100%;
       }
-      .author {
+      .team-member {
         flex: 1;
-        margin: 0 2rem;
+        margin: 1rem 2rem;
       }
-      .author img {
+      @media (max-width: 767px) {
+        .team-member {
+          margin: 1rem;
+        }
+        .team-member h2 {
+          margin: 1rem;
+        }
+      }
+      .team-member img {
         width: 100%;
         height: auto;
       }
-      .author svg {
+      .team-member svg {
         height: 1.5rem;
         width: 1.5rem;
       }
@@ -240,7 +264,7 @@
         <a href="https://medium.com/balalaika-it" target="_blank" rel="noopener noreferrer">
           <svg><use href="#medium" /></svg>
         </a>
-        <a href="mailto:andrey@goncharov.page">
+        <a href="mailto:info@balalaikait.com">
           <svg><use href="#envelope" /></svg>
         </a>
       </nav>
@@ -281,10 +305,10 @@
         <p>or</p>
         <p>subscribe to our <a href="https://t.me/balalaikait" target="_blank" rel="noopener noreferrer">Telegram</a></p>
       </section>
-      <section class="authors">
-        <h1>Authors</h1>
+      <section class="team">
+        <h1>Team</h1>
         <div>
-          <section class="author">
+          <section class="team-member">
             <img src="pechkurov-cropped.jpg" />
             <h2>
               Andrey Pechkurov
@@ -294,10 +318,10 @@
             </h2>
             <p>
               Software engineer at Hazelcast. Code Java by day and Node.js by night. Systems architecture enthusiast. Node.js core
-              collaborator. Run BeerJS Voronezh. Grumpy old fart.
+              collaborator. Run BeerJS Voronezh. Grumpy senior comrade.
             </p>
           </section>
-          <section class="author">
+          <section class="team-member">
             <img src="goncharov-cropped.jpg" />
             <h2>
               Andrey Goncharov
@@ -307,7 +331,7 @@
             </h2>
             <p>
               Full-stack TypeScript and JavaScript developer. Aspiring speaker. Blog on an irregular basis. Love open-source. Run BeerJS
-              Voronezh. Arrogant and disrespectful millennial.
+              Voronezh. Arrogant millennial comrade.
             </p>
           </section>
         </div>
